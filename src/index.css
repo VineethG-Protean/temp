@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans-VariableFont_wdthwght.ttf');
+}
+
+html body .bot-fonts {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.markdown-container *{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.ptn-scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.ptn-scrollbar-hide {
+  scrollbar-width: none;
+}
+
+table {
+  border-collapse: initial;
+}
+
+.ptn-reset-p {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.ptn-auto-width {
+  width: auto !important;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #000;
+}
+
+/* Target first row's first and last cell */
+/* table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+} */
+
+/* Target last row's first and last cell */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* Basic styling for the accordion container */
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Styling for each accordion section */
+.accordion-section {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for accordion section titles */
+.accordion-section-title {
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-section-title:hover {
+  background: #f4f4f4;
+}
+
+/* Styling for the content section */
+.accordion-section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 15px;
+}
+
+/* Active state for opened sections */
+.accordion-section-content:target {
+  max-height: 500px;
+  /* Adjust as needed */
+  padding: 15px;
+}
+
+/* Active state for opened section */
+.accordion-section.active .accordion-section-content {
+  display: block;
+}
+
+/* Ensure links inside content are styled well */
+.accordion-section-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.accordion-section-content a:hover {
+  text-decoration: underline;
+}
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --muted: 285 2% 57%;
+    --destructive: 0 84.2% 60.2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 5% 55%;
+    --border: 240 5.9% 90%;
+    --radius: 0.5rem;
+
+    /** NPS COLOR SCHEME */
+    --nps-accent-1: 0 0% 100%;
+    --nps-accent-2: 33 35% 94%;
+    --nps-card: 0 64% 100%;
+    --nps-bubble: 42 19% 87%;
+    --nps-text-muted: 213 5% 55%;
+
+    /** ESIGN COLOR SCHEME */
+    --esignpro-accent-1: 0 0% 100%;
+    --esignpro-accent-2: 90 29% 95%;
+    --esignpro-card: 0 0% 100%;
+    --esignpro-text-muted: 213 5% 55%;
+
+    /** PROTEAN PLUS COLOR SCHEME */
+    --proteanplus-accent-1: 0 0% 100%;
+    --proteanplus-accent-2: 195 29% 95%;
+    --proteanplus-card: 0 0% 100%;
+    --proteanplus-text-muted: 213 5% 55%;
+
+    /** PROTEAN X COLOR SCHEME */
+    --proteanx-accent-1: 0 0% 13%;
+    --proteanx-accent-2: 0 0% 16%;
+    --proteanx-card: 0 0% 23%;
+    --proteanx-text-muted: 213 5% 55%;
+  }
+}
+
+/* @layer base {
+  * {
+    @apply ptn-border-border;
+  }
+
+  body {
+    @apply ptn-bg-background ptn-text-foreground;
+  }
+} */

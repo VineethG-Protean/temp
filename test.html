@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p>This is Payment Gateway</p>
+    <button onclick="sendMessageToParent('success')">Success</button>
+    <button onclick="sendMessageToParent('fail')">Fail</button> -->
+    <script type="module" src="./dist-widgets/pan.js"></script>
+    <!-- <script>
+        // Function to send a message to the parent window
+        function sendMessageToParent(message) {
+            if (window.opener && !window.opener.closed) {
+                window.opener.postMessage(message, "*");
+            }
+        }
+
+        // Send a message when the popup loads
+        sendMessageToParent({ status: "loaded", message: "Popup is opened" });
+
+        // Detect when the popup is closed and notify the parent
+        window.addEventListener("beforeunload", function () {
+            sendMessageToParent({ status: "closed", message: "Popup is closed" });
+        });
+    </script> -->
+</body>
+
+</html>
