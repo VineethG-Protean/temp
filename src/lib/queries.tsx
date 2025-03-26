@@ -9,28 +9,38 @@ import { QUERIES } from "./types";
 
 export const PAN_QUERIES: QUERIES = [
   {
-    title: "Who can register for NPS?",
-    intent: "Who can register for NPS?",
+    title: "What is PAN?",
+    intent: "What is PAN?",
     icon: <ClipboardPenIcon className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
   },
   {
-    title: "What's the registration process?",
-    intent: "What's the registration process?",
+    title: "Who can apply for PAN?",
+    intent: "Who can apply for PAN?",
+    icon: <ClipboardPenIcon className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
+  },
+  {
+    title: "How do I apply for PAN?",
+    intent: "How do I apply for PAN?",
     icon: <ListChecks className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
   },
   {
-    title: "What are the benefits of NPS?",
-    intent: "What are the benefits of NPS?",
+    title: "What documents are required for pan application?",
+    intent: "What documents are required for pan application?",
     icon: <HandCoins className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
   },
   {
-    title: "How can I withdraw money from NPS?",
-    intent: "How can I withdraw money from NPS?",
+    title: "Is Aadhaar mandatory for pan application?",
+    intent: "Is Aadhaar mandatory for pan application?",
     icon: <BadgeIndianRupee className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
   },
   {
-    title: "What income tax reliefs are available to individuals?",
-    intent: "What income tax reliefs are available to individuals?",
+    title: "Where can I obtain PAN application form?",
+    intent: "Where can I obtain PAN application form?",
+    icon: <Calculator className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
+  },
+  {
+    title: "What are the charges to be paid while submitting Form 49A/ 49AA?",
+    intent: "What are the charges to be paid while submitting Form 49A/ 49AA?",
     icon: <Calculator className="pth-h-5 ptn-w-5 ptn-stroke-1" />,
   },
 ];
